@@ -35,12 +35,14 @@ The station is already wired to Navidrome when it boots: the Navidrome admin use
 **After deploying:**
 
 1. **Upload music.** Open the Navidrome service's upload-panel domain (the one on port 8080). Log in as `admin` with `FILEBROWSER_PASSWORD` from the Navidrome service's Variables tab, and drop in folders of tagged MP3/FLAC files.
-2. **Finish setup.** Open the SUBWAVE domain at `/onboarding` and sign in as `admin` with `ADMIN_PASS` from the SUBWAVE service's Variables tab. The wizard asks for your LLM provider and key, the DJ persona and voice, and your location for weather. The Navidrome connection is already filled in.
+2. **Run the setup wizard.** Open `/onboarding?rerun=1` on the SUBWAVE domain and sign in as `admin` with `ADMIN_PASS` from the SUBWAVE service's Variables tab. Leave the Navidrome step blank, because the station is already connected to it. The other steps set your LLM provider and key, the voice, the station name and your location (for weather and the station's timezone). Saving puts your music on air within seconds.
 3. **Listen.** The player is at `/`, the stream at `/stream.mp3` (paste it into VLC, a hardware radio or Sonos), and the operator console at `/admin`.
+
+Until there is music and the wizard has been saved, the stream plays the station ident on a loop. Music you add later is picked up without a restart.
 
 **Voices.** Piper is the default voice and costs almost nothing. Kokoro is built in too and sounds better, but its model takes about 700 MB of RAM once it is used. Cloud voices (OpenAI, ElevenLabs) need only a key.
 
-**Memory.** The station idles at about 350 MB and Navidrome at about 40 MB, so the Trial plan runs it with Piper. Switch to Kokoro only on a plan with at least 2 GB.
+**Memory.** On Railway the station runs at about 360 MB and Navidrome with its upload panel at about 90 MB, so the Trial plan runs it with Piper. Switch to Kokoro only on a plan with at least 2 GB.
 
 **Changes from the upstream image, all in the [wrapper](https://github.com/nomideusz/subwave-railway):**
 
