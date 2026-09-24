@@ -1,0 +1,8 @@
+{
+  "name": "SUB/WAVE | AI DJ Radio Station with Navidrome",
+  "short_name": "SUBWAVE",
+  "description": "Internet radio with an AI DJ that picks and talks, fed by your music",
+  "category": "Other",
+  "image": "https://raw.githubusercontent.com/perminder-klair/subwave/8f4c74dafa5d730bd3ca3763106e0c7462c38b5e/app/assets/icon.png",
+  "card_desc": "A personal internet radio station: an AI DJ picks tracks from your Navidrome library, talks between them and takes requests, all on one Icecast stream."
+}
