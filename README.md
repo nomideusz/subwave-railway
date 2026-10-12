@@ -1,6 +1,6 @@
 # Deploy and Host SUB/WAVE on Railway
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/subwave?utm_medium=integration&utm_source=button&utm_campaign=subwave)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/subwave?referralCode=sLjDXb&utm_medium=integration&utm_source=button&utm_campaign=subwave)
 
 [SUB/WAVE](https://github.com/perminder-klair/subwave) is a personal internet radio station with an AI DJ. There is one Icecast stream and every listener hears the same thing at the same time. The DJ picks tracks from your own music library, talks between them (station idents, time checks, weather, intros), and takes song requests in plain language. It is radio, not a playlist: no skip button, no per-listener shuffle.
 
