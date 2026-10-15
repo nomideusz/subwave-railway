@@ -1,4 +1,4 @@
-FROM ghcr.io/perminder-klair/subwave-aio:1.16.0
+FROM ghcr.io/perminder-klair/subwave-aio:1.24.0
 
 # Caddy listens on $CADDY_HTTP_PORT (Railway's PORT, see railway-entrypoint.sh).
 # Railway's edge reaches the container from 100.64.0.0/10 and sends
