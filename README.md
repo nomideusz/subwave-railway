@@ -28,7 +28,7 @@ The station is already wired to Navidrome when it boots: the Navidrome admin use
 
 - [SUB/WAVE on GitHub](https://github.com/perminder-klair/subwave) and the [operator manual](https://www.getsubwave.com/manual)
 - [Navidrome documentation](https://www.navidrome.org/docs/)
-- [Template source on GitHub](https://github.com/nomideusz/subwave-railway)
+- [Template source on GitHub](https://github.com/two-workspaces/subwave)
 
 ### Implementation Details
 
@@ -44,7 +44,7 @@ Until there is music and the wizard has been saved, the stream plays the station
 
 **Memory.** On Railway the station runs at about 360 MB and Navidrome with its upload panel at about 90 MB, so the Trial plan runs it with Piper. Switch to Kokoro only on a plan with at least 2 GB.
 
-**Changes from the upstream image, all in the [wrapper](https://github.com/nomideusz/subwave-railway):**
+**Changes from the upstream image, all in the [wrapper](https://github.com/two-workspaces/subwave):**
 
 - Railway's `PORT` goes to Caddy only. The controller reads `PORT` for its own internal port and would otherwise fight Caddy for it.
 - Caddy trusts `X-Forwarded-For` from Railway's edge, so request cooldowns and the admin lockout see each listener's real IP instead of treating everyone as one visitor.

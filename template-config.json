@@ -14,7 +14,7 @@
         "restartPolicyMaxRetries": 10
       },
       "source": {
-        "repo": "https://github.com/nomideusz/subwave-railway",
+        "repo": "https://github.com/two-workspaces/subwave",
         "rootDirectory": "/"
       },
       "variables": {
