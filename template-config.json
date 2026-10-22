@@ -78,7 +78,7 @@
         "restartPolicyMaxRetries": 10
       },
       "source": {
-        "repo": "https://github.com/nomideusz/navidrome-railway",
+        "repo": "https://github.com/two-workspaces/navidrome",
         "rootDirectory": "/"
       },
       "variables": {
